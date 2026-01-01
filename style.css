@@ -479,6 +479,129 @@ ul {
   }
 }
 
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #e2e8f0;
+}
+
+.quote-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: var(--dark-text);
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.client-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text);
+}
+
+.client-info h4 {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.client-role {
+    font-size: 0.85rem;
+    color: var(--light-text);
+}
+
+/* Improved Contact Form */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0; /* Remove gap, handle via padding */
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 40px;
+}
+
+.contact-form-container {
+    background: var(--white);
+    padding: 50px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.contact-info {
+    padding: 50px;
+    background-color: #0c4a6e; /* Make sure it matches primary dark */
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: #073552;
+}
+
+/* Responsive specific update */
+
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
